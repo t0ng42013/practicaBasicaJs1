@@ -2,24 +2,24 @@
 
 function parImpar(number) {
   if (number % 2 == 0) {
-    console.log("el numero de la función es Par");
+    console.log("el numero  es Par");
   } else {
-    console.log("El numero de la función es Impar");
+    console.log("El numero Impar");
   }
 }
-
+parImpar(16);
 //2- Crear una función que reciba dos números por parámetro e indique en consola que número es mayor, y si ninguno lo es, indicar por consola que son iguales.
 
 function esMayor(number1, number2) {
   if (number1 > number2) {
     console.log("numero " + number1 + " es mayor");
   } else if (number1 < number2) {
-    console.log("numero 2 es mayor");
+    console.log("numero "+ number2+" es mayor");
   } else {
     console.log("son iguales");
   }
 }
-
+esMayor(5,15);
 //3- Crear una función que reciba un número por parámetro e indique en consola si ese número es múltiplo de 5.
 
 function esMultiploDeCinco(numero) {
@@ -29,7 +29,7 @@ function esMultiploDeCinco(numero) {
     console.log(numero + " no es múltiplo de 5.");
   }
 }
-
+esMultiploDeCinco(15);
 //4- Crear una función que reciba un número por parámetro e imprima por consola todos los números desde el 0 hasta llegar a ese número.
 
 function imprimaNumeros(numero) {
@@ -37,7 +37,7 @@ function imprimaNumeros(numero) {
     console.log(i + 1);
   }
 }
-
+imprimaNumeros(5);
 //5 - Crear una función que reciba una palabra y un número por parámetro e imprima por consola  esa palabra la cantidad correspondiente al número indicado.
 
 function imprimirPalabra(palabra, numero) {
@@ -45,7 +45,7 @@ function imprimirPalabra(palabra, numero) {
     console.log(palabra);
   }
 }
-
+imprimirPalabra('hola',5);
 //6 - Crear una función que reciba un array por parámetro e imprima por consola todos los valores de ese array.
 let array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 function imprimirArray(arreglo) {
@@ -53,7 +53,7 @@ function imprimirArray(arreglo) {
     console.log(array[i]);
   }
 }
-
+imprimirArray(array);
 //7 - Crear una función que reciba un array con 10 números e imprima por consola todos los valores de ese array, menos el que se encuentre en la 5ta posición del mismo. Ayuda: Recuerden que el primer índice de un array es "0".
 
 let array2 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -63,7 +63,7 @@ function excepto5to(arreglo) {
     if (i !== 4) console.log(array[i]);
   }
 }
-
+excepto5to(array2);
 //8 - Crea una función que reciba un array de números y un número por parámetro e imprima por consola cada número del array multiplicado por el número pasado por parámetro.
 
 let arrreglo = [0, 1, 2, 3, 4, 5];
@@ -73,3 +73,5 @@ function multiNumeros(arrreglo, numero) {
     console.log(i + " * " + numero + " = " + arrreglo[i] * numero);
   }
 }
+
+multiNumeros(arrreglo,3);
